@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- Шапка сайту -->
+	<header>
+		<h1>TomatoVerse 🍅</h1>
+		<nav>
+			<a href="index.html">Головна</a>
+			<a href="about.html">Про мене</a>
+			<a href="contacts.html">Контакти</a>
+		</nav>
+	</header>
+	<div id="visitInfo" class="visit-message"></div>
+
+	<!-- Основний контент -->
+	<main class="page">
+		<h2>Інтерактивна анкета</h2>
+		<div class="banner">
+			<label for="name">Введи ім'я</label>
+			<input type="text" id="name" placeholder="Твоє ім'я">
+			<label for="surnameInput">Введи прізвище:</label>
+			<input id="surnameInput" type="text" placeholder="Твоє прізвище"><br>
+			<label for="ageInput">Введи вік:</label>
+            <input id="ageInput" type="number" placeholder="Твій вік">
+			<button class="btn" onclick="showGreeting()">Привітатись</button>
+
+			<p id="done"></p>
+			<div id="profileBox" class="profileCard">
+				<h3>Твій профіль:</h3>
+				<p id="profileText"></p>
+			</div>
+
+
+
+			<div id="friendsBox" class="friendsCard">
+				<h3>Список друзів</h3>
+				<ul id="friendsList"></ul>
+			</div>
+			<div id ="addFriendsBox" class="addFriendsCard">
+				<h3>Додай свого друга</h3>
+				<label for="">Ім'я друга:</label>
+				<input type="text" id="friendName" placeholder="Ім'я друга">
+				<label for="friendAge">Вік друга</label>
+				<input type="number" id="friendAge" placeholder="Вік друга"><br>
+				<label for="friendHobby">Хобі друга:</label>
+				<input id="friendHobby" type="text" placeholder="Хобі друга">
+				<button class="btn" onclick="addFriends()">Додати друга</button>
+			</div>
+		</div>
+	</main>
+	<footer>
+	<div class="footer-content">
+		<h3>TomatoVerse 🍅</h3>
+		<p>Смакуй життя з нами — все про помідори, з любов’ю та натхненням!</p>
+
+		<div class="social-links">
+			<a href="https://instagram.com" target="_blank" class="insta" title="Instagram">
+				<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+			</a>
+			<a href="https://t.me" target="_blank" class="tg" title="Telegram">
+				<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+			</a>
+			<a href="https://youtube.com" target="_blank" class="yt" title="YouTube">
+				<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube">
+			</a>
+		</div>
+
+		<p class="footer-bottom">© 2025 TomatoVerse — Всі права захищено</p>
+	</div>
+</footer>
+
+
+
+<script src="script.js"></script>
+	
+</body>
+</html>
