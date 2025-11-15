@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 	<!-- Шапка сайту -->
@@ -26,21 +27,18 @@
 			<p3>(050) 678 18 65</p3><br>
 			<p4>Також ви можете надіслати нам повідомлення за допомогою цієї форми</p4><br>
 			<div>
-		<form action="https://formspree.io/f/xnnlagod" method="POST" class="form">
-  <label>Ваше ім'я:</label>
-  <input type="text" name="name" required>
+		<form id="contactForm" class="form">
+			<label for="name">Ваше ім'я:</label>
+			<input type="text" id="name" placeholder="Введіть ім'я">
+			<label for="email">Електрона пошта:</label>
+			<input type="email" id="email" placeholder="examle@gmail.com">
+			<label for="topic">Тема повідомлення:</label>
+			<input type="text" id="topic" placeholder="Тема" />
+			<label for="message">Ваше повідомлення:</label>
+			<textarea id="message" rows="10" placeholder="Напишіть своє питання..."></textarea>
 
-  <label>Електронна пошта:</label>
-  <input type="email" name="email" required>
-
-  <label>Тема:</label>
-  <input type="text" name="topic" required>
-
-  <label>Повідомлення:</label>
-  <textarea name="message" rows="10" required></textarea>
-
-  <button type="submit">Надіслати</button>
-</form>
+			<button type="submit">Надіслати</button>
+		</form>
 
 			<div id="feedback"></div>
 
@@ -67,6 +65,7 @@
 		<p class="footer-bottom">© 2025 TomatoVerse — Всі права захищено</p>
 	</div>
 </footer>
+
 
 <script src="script.js"></script>
 
