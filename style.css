@@ -86,6 +86,7 @@ nav a:hover {
 }
 
 
+
 .friendsCard h3{
 	margin: 10px 0px;
 	color: lightblue;
@@ -339,4 +340,21 @@ footer {
 .page2 li {
   margin: 8px 0;
   font-size: 16px;
+}
+
+.input {
+  border: 2px solid transparent;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #4A9DEC;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
 }
