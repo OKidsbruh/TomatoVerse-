@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	font-family: Arial;
-	background: green;
+	background:linear-gradient(0deg, rgb(3 64 9) 0%, rgb(3 112 19) 50%, rgb(5 175 31) 100%);
 	/*background-image: url(https://st2.depositphotos.com/1011382/8088/i/450/depositphotos_80883766-stock-photo-tomatoes-background-close-up.jpg);
 	background-size: 100% 100%;*/
 
@@ -358,3 +358,4 @@ footer {
   box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
   background-color: white;
 }
+
